@@ -1,0 +1,75 @@
+.dashboard-main {
+    background: #f8f9fa;
+    min-height: 70vh;
+}
+.sidebar-card {
+    position: sticky;
+    top: 20px;
+}
+.avatar-wrapper {
+    border: 4px solid white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.list-group-item {
+    border: none;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+.list-group-item.active {
+    background: rgba(212, 175, 55, 0.1);
+    border-left-color: #D4AF37;
+    color: #D4AF37;
+    font-weight: 600;
+}
+.list-group-item:hover:not(.active) {
+    background: rgba(0,0,0,0.05);
+    padding-left: 1.5rem;
+}
+.table-hover tbody tr:hover {
+    background: rgba(212, 175, 55, 0.1) !important;
+}
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #6c757d;
+}
+
+.favorite-card {
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.favorite-card:hover {
+    transform: translateY(-5px);
+}
+
+.favorite-card img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.favorite-card .remove-fav-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+.favorite-card .remove-fav-btn:hover {
+    background: #dc3545;
+    color: white;
+}
+
+.favorite-card .card-body {
+    padding-top: 1.5rem;
+}

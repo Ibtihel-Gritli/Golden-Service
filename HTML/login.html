@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Golden Services</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="..\CSS\theme.css">
+    <!-- ChatBot CSS -->
+    <link rel="stylesheet" href="..\CSS\chatbot.css">
+    <style>
+        .form-icon {
+            color: #6c757d;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="home.html">
+                <i class="bi bi-shop me-2"></i>
+                <span>Golden Services</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">
+                            <i class="bi bi-house-door me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html">
+                            <i class="bi bi-shop me-1"></i>Store
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">
+                            <i class="bi bi-info-circle me-1"></i>About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Section -->
+    <section class="login-section py-5 min-vh-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-4">
+                                <h2 class="fw-bold">Create Your Account</h2>
+                                <p class="text-muted">Join Golden Services and access amazing features</p>
+                            </div>
+                            
+                            <!-- Single Registration Form -->
+                            <form id="registerForm">
+                                <div class="row g-3">
+                                    <!-- Personal Information -->
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3 text-primary"><i class="bi bi-person-circle me-2"></i>Personal Information</h5>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">First Name *</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-person form-icon"></i></span>
+                                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Last Name *</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-person form-icon"></i></span>
+                                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Age *</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-calendar form-icon"></i></span>
+                                                <input type="number" class="form-control" id="age" placeholder="Enter your age" min="18" max="100" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Contact Information -->
+                                    <div class="col-md-6">
+                                        <h5 class="mb-3 text-primary"><i class="bi bi-telephone me-2"></i>Contact Information</h5>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Email Address *</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-envelope form-icon"></i></span>
+                                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Phone Number *</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-phone form-icon"></i></span>
+                                                <input type="tel" class="form-control" id="phone" placeholder="+216 XX XXX XXX" required>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Address *</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-geo-alt form-icon"></i></span>
+                                                <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Account Information -->
+                                    <div class="col-12">
+                                        <hr class="my-4">
+                                        <h5 class="mb-3 text-primary"><i class="bi bi-shield-lock me-2"></i>Account Security</h5>
+                                        
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Password *</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="bi bi-lock form-icon"></i></span>
+                                                        <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                                                    </div>
+                                                    <div class="form-text">At least 8 characters with letters and numbers</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Confirm Password *</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text"><i class="bi bi-lock-fill form-icon"></i></span>
+                                                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                                                    </div>
+                                                    <div id="passwordMatch" class="form-text"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Terms and Conditions -->
+                                        <div class="mb-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="terms" required>
+                                                <label class="form-check-label" for="terms">
+                                                    I agree to the <a href="#" class="text-primary">Terms of Service</a> and <a href="#" class="text-primary">Privacy Policy</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Submit Button -->
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-success btn-lg py-3">
+                                        <i class="bi bi-person-plus me-2"></i>Create Account
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <!-- Already have account -->
+                            <div class="text-center mt-4">
+                                <p class="text-muted mb-0">
+                                    Already have an account? 
+                                    <a href="#" class="text-primary fw-semibold" id="loginLink">Sign in here</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h4 class="fw-bold mb-3 d-flex align-items-center">
+                        <i class="bi bi-shop me-2"></i>Golden Services
+                    </h4>
+                    <p>Transform your ideas into reality with our marketplace that connects talented creators with passionate clients.</p>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="home.html" class="footer-link d-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2"></i>Home
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="store.html" class="footer-link d-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2"></i>Store
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="aboutus.html" class="footer-link d-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2"></i>About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="compte.html" class="footer-link d-flex align-items-center">
+                                <i class="bi bi-chevron-right me-2"></i>Profile
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contact Support</h5>
+                    <p><i class="bi bi-envelope me-2"></i>support@goldenservices.com</p>
+                    <p><i class="bi bi-telephone me-2"></i>+216 12 345 678</p>
+                </div>
+            </div>
+            
+            <div class="text-center pt-3">
+                <p class="mb-0">&copy; 2025 Golden Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+     <script src="..\JS\auth.js"></script>
+    <script src="..\JS\login.js"></script>
+    <!-- Chatbot JS -->
+    <script src="..\JS\chatbot.js"></script>
+</body>
+</html>
